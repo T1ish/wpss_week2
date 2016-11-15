@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>A formular for information</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <h1>Information Formular</h1>
+        <form action="formServlet" method="POST">
+            <fieldset>
+                <legend>General information</legend>
+                
+                <label for="avatar">Indsæt evt. en url for din billede: </label>
+                <input type="url" id="avatar" name="billedurl" value="" />
+                <br>
+                <br>
+                <label for="name">Fornavn: </label>
+                <input type="text" id="name" name="fornavn" value="" required/>
+                <br>
+                <label form="surname">Efternavn: </label>
+                <input type="text" id="surname" name="efternavn" value="" required/>
+                <br>
+                <br>
+                <label for="city">By: </label>
+                <input type="text" id="city" name="by" value="" required />
+                <br>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Programmeringssprogfærdigheder</legend>
+                
+                <label for="languages">Vælg en eller flere</label>
+                <br>
+                <input type="checkbox" name="programming" value="C"/> C 
+                <br>
+                <input type="checkbox" name="programming" value="C++"/> C++
+                <br>
+                <input type="checkbox" name="programming" value="C#" /> C#
+                <br>
+                <input type="checkbox" name="programming" value="Java" /> Java
+                <br>
+                <input type="checkbox" name="programming" value="Ruby" /> Ruby
+                <br>
+                <input type="checkbox" name="programming" value="Groovy" /> Groovy
+                <br>
+                <input type="checkbox" name="programming" value="Python" /> Python
+                <br>
+                <input type="checkbox" name="programming" value="Ruby On Rails" /> Ruby On Rails
+                <br>
+                <input type="checkbox" name="programming" value="Grails" /> Grails
+                <br>
+                <input type="checkbox" name="programming" value="Go" /> Go
+                <br>
+                <input type="checkbox" name="programming" value="HTML5" /> HTML5
+                <br>
+                <input type="checkbox" name="programming" value="CSS3" /> CSS3
+                <br>
+                <input type="checkbox" name="programming" value="Javascript" /> Javascript
+                <br>
+                <input type="checkbox" name="programming" value="JQuery" /> JQuery
+                <br>
+                <input type="checkbox" name="programming" value="AngularJS" /> AngularJS
+                <br>
+                <input type="checkbox" name="programming" value="ReactJS" /> ReactJS
+                <br>
+                <input type="checkbox" name="programming" value="Spring" /> Spring
+                <br>
+                <input type="checkbox" name="programming" value="Hibernate" /> Hibernate
+                <br>
+                <input type="checkbox" name="programming" value="Bootstrap" /> BootStrap
+                <br>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Kontakinformation</legend>
+            
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" value="" required />
+                <br>
+                <label for="mobile">Mobil: </label>
+                <input type="tel" id="mobile" name="mobil" value="" required />
+                
+            </fieldset>
+            
+            <fieldset>
+                <legend>Personlig information</legend>
+                
+                <label for="birthyear">Fødselsår: </label>
+                <select id="birthyear" name="birthyear" size="1" required>
+                    <option>1980</option>
+                    <option>1981</option>
+                    <option>1982</option>
+                    <option>1983</option>
+                    <option>1984</option>
+                    <option>1985</option>
+                    <option>1986</option>
+                    <option>1987</option>
+                    <option>1988</option>
+                    <option>1989</option>
+                    <option>1990</option>
+                    <option>1991</option>
+                    <option>1992</option>
+                    <option>1993</option>
+                    <option>1994</option>
+                    <option>1995</option>
+                    <option>1996</option>
+                    <option>1997</option>
+                    <option>1998</option>
+                    <option>1999</option>
+                    <option>2000</option>
+                    <option>2001</option>
+                    <option>2002</option>
+                    <option>2003</option>
+                    <option>2004</option>
+                    <option>2005</option>
+                    <option>2006</option>
+                    <option>2007</option>
+                    <option>2008</option>
+                    <option>2009</option>
+                    <option>2010</option>
+                    <option>2011</option>
+                    <option>2012</option>
+                    <option>2013</option>
+                    <option>2014</option>
+                    <option>2015</option>
+                    <option>2016</option>
+                </select>
+                <br>
+                <label for ="genders">Køn: </label>
+                <input type="radio" id="genders" name="gender" value="Mand" required/>Mand
+                <input type="radio" id="genders" name="gender" value="Kvinde" required/>Kvinde
+                <br>
+                <label for="height">Højde: </label>
+                <span>Lille</span>
+                <input type="range" id="height" name="height" min="0" max="210" step="5" value="105">
+                <span>Høj</span>
+                <br>
+                <label for="description">Beskrivelse</label>
+                <textarea id="description" name="beskrivelse" rows="5" cols="20" required >
+                </textarea>
+            </fieldset>
+            
+            <input type="submit" value="Send" />
+        </form>
+        
+    </body>
+</html>
